@@ -1,0 +1,17 @@
+#!/bin/sh
+
+mkdir -p /mnt-root
+mkdir -p /mnt-user
+
+mount -t ubifs ubi0:root /mnt-root
+mount -t ubifs ubi1:user /mnt-user
+
+PWD=`pwd`
+
+cp "${PWD}/hmcurl.sh" "/mnt-user/etc/config/rc.d/"
+cp "${PWD}/bin/curl" "/bin/"
+cp "${PWD}/lib/curl" "/lib/libcurl.so.4"
+cp "${PWD}/lib/curl" "/lib/libcurl.so.4.3.0"
+
+umount /mnt-root
+umount /mnt-user
