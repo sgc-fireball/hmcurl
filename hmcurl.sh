@@ -25,7 +25,7 @@ uninstall() {
 	mount -o remount,ro /
 }
 
-}info() {
+info() {
 	echo "Info: Author: <a href=\"mailto:rh+homematic@hrdns.de\">Richard Huelsberg</a><br>"
 	echo "Info: Homepage: <a target=\"_blank\" href=\"https://www.hrdns.de\">HRdns.de</a><br>"
 	echo "Name: HMcurl"
