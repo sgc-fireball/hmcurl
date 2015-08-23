@@ -3,7 +3,7 @@
 cd `dirname ${0}`
 
 /bin/rm -f hmcurl.tar.gz
-/bin/chmod +x update_script hmcurl.sh
+/bin/chmod +x update_script hmcurl.sh bin/curl
 /bin/tar -cvvzf hmcurl.tar.gz \
     update_script \
     hmcurl.sh \
