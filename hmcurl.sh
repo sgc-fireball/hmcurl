@@ -16,9 +16,9 @@ uninstall() {
 	mount -o remount,rw /
 	mount -o remount,rw /usr/local
 
-    rm /bin/curl
-    rm /lib/libcurl.so.4
-    rm /lib/libcurl.so.4.3.0
+    rm -f /bin/curl
+    rm -f /lib/libcurl.so.4
+    rm -f /lib/libcurl.so.4.3.0
 
     logger -t homematic -p user.info "uninstalled hmcurl"
 	mount -o remount,ro /usr/local
