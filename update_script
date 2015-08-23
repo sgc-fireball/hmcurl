@@ -10,8 +10,8 @@ PWD=`pwd`
 
 cp "${PWD}/hmcurl.sh" "/mnt-user/etc/config/rc.d/"
 cp "${PWD}/bin/curl" "/mnt-root/bin/"
-cp "${PWD}/lib/curl" "/mnt-root/lib/libcurl.so.4"
-cp "${PWD}/lib/curl" "/mnt-root/lib/libcurl.so.4.3.0"
+cp "${PWD}/lib/libcurl.so.4" "/mnt-root/lib/libcurl.so.4"
+cp "${PWD}/lib/libcurl.so.4.3.0" "/mnt-root/lib/libcurl.so.4.3.0"
 
 umount /mnt-root
 umount /mnt-user
